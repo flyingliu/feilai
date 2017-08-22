@@ -1,0 +1,10 @@
+.about
+    header
+        i.logo
+        span= title
+    main.scroll
+        dl
+            - for item in data
+                dd
+                    span= item.key
+                    h5= item.value

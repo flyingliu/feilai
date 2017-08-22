@@ -1,0 +1,99 @@
+{
+    "index": {
+        "title": "我是刘飞来.",
+        "links": [{
+                "name": "github",
+                "icon": "icon-yuan-github",
+                "url": "https://github.com/flyingliu"
+            },
+            {
+                "name": "blog",
+                "icon": "icon-blog2",
+                "url": "https://user.qzone.qq.com/63480013/"
+            },
+            {
+                "name": "douban",
+                "icon": "icon-douban",
+                "url": "https://www.douban.com/people/guolaiwan/"
+            },
+            {
+                "name": "zhihu",
+                "icon": "icon-zhihu",
+                "url": "https://www.zhihu.com/people/liu-fei-lai"
+            }
+        ]
+    },
+    "about": {
+        "title": "我的简历",
+        "data": [{
+            "time": "2016.03 — now",
+            "company": "浙江数联云集团有限公司",
+            "work": "参与场景制作研发，主要的产品有瞳掌柜App"
+        }, {
+            "time": "2015.08 — 2016.02",
+            "company": "同程国际旅行社有限公司",
+            "work": "手机QQ、微信钱包上火车票售卖(与腾讯合作的)"
+        }, {
+            "time": "2014.03 — 2015.07",
+            "company": "上海汇联皆景科技有限公司",
+            "work": "参与全国景区场景制作研发"
+        }, {
+            "time": "2013.04 — 2014.02",
+            "company": "上海亲巢网络科技有限公司",
+            "work": "房地产业务相关的App，小游戏开发"
+        }, {
+            "time": "2010.11 — 2012.04",
+            "company": "上海车易信息科技有限公司",
+            "work": "汽车配件网站的运营与开发"
+        }, {
+            "time": "2007.03 — 2010.05",
+            "company": "杭州亿中网络科技有限公司",
+            "work": "利尔达集团旗下电子原器件网站的运营与开发"
+        }, {
+            "time": "2004.08 — 2007.01",
+            "company": "杭州和悦信息科技有限公司",
+            "work": "和悦人才网网站的运营与开发"
+        }]
+    },
+    "tech": {
+        "title": "工作技能",
+        "data": [{
+            "type": "Javascript",
+            "icon": "icon-languagejavascript",
+            "work": "利用JS技术完成前后端交互，完成页面渲染与实现各种动画效果。"
+        }, {
+            "type": "Nodejs",
+            "icon": "icon-nodejs",
+            "work": "利用Express与mongodb搭建网站，用Gulp,webpack等技术完成网站的发布与优化"
+        }, {
+            "type": "Html5",
+            "icon": "icon-html5",
+            "work": "熟悉使用html5技术，完成微信小动画游戏等。熟悉Canvas,SVG，video等新特性在网站中的应用"
+        }, {
+            "type": "CSS3",
+
+            "icon": "icon-socialcss3",
+            "work": "能准确完成页面布局，能有效利用CSS3动画技术"
+        }, {
+            "type": "Vue",
+
+            "icon": "icon-vue",
+            "work": "熟练使用Vue,jQuery,IScroll等框架和库。快速开发HTML5网站与小程序。"
+        }, {
+            "type": "Other",
+
+            "icon": "icon-xiangjijingtou",
+            "work": "熟悉Photoshop等设计软件，做过产品摄影，熟练使用Git、SVN等版本控制软件。"
+        }]
+    },
+    "contact": {
+        "title": "与我联系",
+        "data": [
+            { "key": "Address", "value": "浙江杭州萧山" },
+            { "key": "Web", "value": "www.guolaiwan.com" },
+            { "key": "QQ", "value": "63480013" },
+            { "key": "Weixin", "value": "Woshifeilai" },
+            { "key": "E-mail", "value": "63480013@qq.com" }
+        ]
+    }
+}

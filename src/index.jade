@@ -1,0 +1,12 @@
+
+.index
+    i.avatar
+    article
+        h1 我是刘飞来
+        p 一名前端工程师，爱捣鼓，瞎折腾!
+        .links
+            ul
+                - for link in links
+                    li
+                        a(class="iconfont #{link.icon}" href="#{link.url}")
+

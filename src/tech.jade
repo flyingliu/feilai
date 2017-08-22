@@ -1,0 +1,11 @@
+.about
+    header
+        i.logo
+        span= title
+    main.scroll
+        dl
+            - for item in data
+                dd
+                    i(class="iconfont #{item.icon}")
+                    h5= item.type
+                    p= item.work

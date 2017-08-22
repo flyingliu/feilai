@@ -1,0 +1,198 @@
+$red:#DC3522;
+$c:#d9cb9e;
+$gray:#374140;
+$black:#000;
+$font: ProximaNova,
+Sans-Serif;
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font: 14px/1.8 $font;
+    color: rgba(#fff, .8);
+    font-weight: 200;
+    text-decoration: none;
+}
+
+a {
+    &:hover {
+        color: $c;
+    }
+}
+
+.panoramic:hover,
+.panoramic:focus {
+    animation-play-state: running;
+}
+
+@keyframes panoramic {
+    to {
+        background-position: 100% 0;
+    }
+}
+
+body {
+    z-index: 9;
+    background: url(../images/bg1.jpg) no-repeat center center #000;
+    background-size: cover;
+    border-top: 3px solid $gray;
+    animation: panoramic 10s linear infinite alternate;
+    animation-play-state: paused;
+    >header {
+        height: 60px;
+        nav {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            li {
+                display: inline-block;
+                border: 0px solid #374140;
+                padding: 5px 10px;
+            }
+        }
+    }
+    >footer {
+        height: 100px;
+        text-align: center;
+        p {
+            padding: 40px 0 0 0;
+            opacity: .8;
+        }
+    }
+    >main {
+        width: 100%;
+        height: calc(100% - 160px);
+        position: relative;
+        i {
+            &.avatar {
+                position: absolute;
+                width: 144px;
+                height: 144px;
+                background: url(../images/avatar.jpg) no-repeat;
+                background-size: cover;
+                border-radius: 50%;
+                margin: auto;
+                left: 0;
+                right: 0;
+                box-shadow: 0 0 0 10px rgba($c, .1);
+            }
+        }
+    }
+}
+
+.about {
+    height: 100%;
+    >header {
+        background: $gray;
+        height: 50px;
+        padding: 0 60px;
+        position: relative;
+        i {
+            &.logo {
+                width: 30px;
+                height: 30px;
+                background: url(../images/avatar.jpg) no-repeat;
+                background-size: cover;
+                border-radius: 50%;
+                left: 20px;
+                top: 10px;
+                display: inline-block;
+                position: absolute;
+            }
+        }
+        span {
+            font: 24px/50px $font;
+        }
+    }
+    >main {
+        margin: 20px 0px;
+        padding: 0 60px;
+        overflow: hidden;
+        max-height: calc(100% - 110px);
+        dl {
+            dd {
+                border-bottom: 1px solid rgba($c, .3);
+                padding: 5px 0 10px 0;
+                &:hover {
+                    background: #000000;
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
+                time {
+                    font-size: 10px;
+                }
+                >i {
+                    width: 32px;
+                    height: 32px;
+                    position: absolute;
+                    text-align: right;
+                    left: -50px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.index {
+    padding: 40px 0 0 0;
+    >article {
+        padding: 160px 0 0 0;
+        text-align: center;
+        h1 {
+            font: 30px/80px arial;
+            color: transparent;
+            background: url(../images/me.png) no-repeat center 0;
+            background-size: auto 80px;
+        }
+    }
+    .links {
+        ul {
+            text-align: center;
+            padding: 20px;
+            li {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                margin: 0 10px;
+                &:hover {
+                    color: $c;
+                    border-color: $c;
+                    a {
+                        color: $c;
+                    }
+                }
+                a {
+                    font: 24px/32px iconfont;
+                }
+            }
+        }
+    }
+}
+
+//圣杯布局
+@for $i from 1 to 7 {
+    h#{$i} {
+        color: rgba(#fff, 1);
+        font-weight: 400;
+    }
+}
+
+#canvas {
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    pointer-events: none;
+    z-index: -1;
+}

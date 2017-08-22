@@ -1,0 +1,11 @@
+.about
+    header
+        i.logo
+        span= title
+    main.scroll
+        dl
+            - for item in data
+                dd
+                    time= item.time
+                    h5= item.company
+                    p= item.work
