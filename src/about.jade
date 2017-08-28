@@ -9,3 +9,10 @@
                     time= item.time
                     h5= item.company
                     p= item.work
+
+            dd.work 
+                h1 项目实例
+                ul
+                    - for it in work
+                        li.link
+                            a(href="#{it.url}" target="_blank")= it.title

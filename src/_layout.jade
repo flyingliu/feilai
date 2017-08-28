@@ -10,14 +10,14 @@ html
     body
         header
             nav
-                li 
-                    a(href="/feilai/") 首页
-                li 
-                    a(href="/feilai/about.html") 我的简历
-                li 
-                    a(href="/feilai/tech.html") 工作技能
-                li 
-                    a(href="/feilai/contact.html") 联系方式
+                li(class="#{ current.source == 'index' ? 'active' : '' }")
+                    a(href="/") 首页
+                li(class="#{ current.source == 'about' ? 'active' : '' }")
+                    a(href="/about.html") 我的简历
+                li(class="#{ current.source == 'tech' ? 'active' : '' }")
+                    a(href="/tech.html") 工作技能
+                li(class="#{ current.source == 'contact' ? 'active' : '' }")
+                    a(href="/contact.html") 联系方式
         main
             != yield
 

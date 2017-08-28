@@ -24,7 +24,7 @@ body {
 
 a {
     &:hover {
-        color: $c;
+        color: $red;
     }
 }
 
@@ -41,7 +41,7 @@ a {
 
 body {
     z-index: 9;
-    background: url(../images/bg1.jpg) no-repeat center center #000;
+    background: url(http://ov61aed6n.bkt.clouddn.com/17-8-28/76214107.jpg) no-repeat center center #000;
     background-size: cover;
     border-top: 3px solid $gray;
     animation: panoramic 10s linear infinite alternate;
@@ -56,6 +56,23 @@ body {
                 display: inline-block;
                 border: 0px solid #374140;
                 padding: 5px 10px;
+                position: relative;
+                &.active,
+                &:hover {
+                    color: $red;
+                    &:after {
+                        width: 20px;
+                        height: 4px;
+                        background: $red;
+                        border-radius: 2px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        content: '';
+                    }
+                }
             }
         }
     }
@@ -76,7 +93,7 @@ body {
                 position: absolute;
                 width: 144px;
                 height: 144px;
-                background: url(../images/avatar.jpg) no-repeat;
+                background: url(http://ov61aed6n.bkt.clouddn.com/17-8-28/36318604.jpg) no-repeat;
                 background-size: cover;
                 border-radius: 50%;
                 margin: auto;
@@ -99,7 +116,7 @@ body {
             &.logo {
                 width: 30px;
                 height: 30px;
-                background: url(../images/avatar.jpg) no-repeat;
+                background: url(http://ov61aed6n.bkt.clouddn.com/17-8-28/36318604.jpg) no-repeat;
                 background-size: cover;
                 border-radius: 50%;
                 left: 20px;
@@ -140,6 +157,35 @@ body {
                 }
             }
         }
+        .work {
+            h1 { font-size:16px; padding:10px 0 5px 0;}
+            ul {
+                li {padding:0 0 0 1.5em;
+                    height: 30px;
+                    position: relative;
+                    a { display: block; line-height: 30px;
+                    
+                    }
+                    &:hover {
+                        &:before {
+                            background:rgba($red,.5);
+                        }
+                    }
+
+                    &:before {
+                        background:rgba(#fff,.5);
+                        width:10px;
+                        height: 10px;
+                        content: '';
+                        position: absolute;
+                        left:0;
+                        top:10px;
+                        border-radius: 50%;
+
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -151,7 +197,7 @@ body {
         h1 {
             font: 30px/80px arial;
             color: transparent;
-            background: url(../images/me.png) no-repeat center 0;
+            background: url(http://ov61aed6n.bkt.clouddn.com/17-8-28/25134182.jpg) no-repeat center 0;
             background-size: auto 80px;
         }
     }

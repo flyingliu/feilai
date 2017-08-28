@@ -53,7 +53,38 @@
             "time": "2004.08 — 2007.01",
             "company": "杭州和悦信息科技有限公司",
             "work": "和悦人才网网站的运营与开发"
-        }]
+        }],
+        "work":[{
+            "title":"panocooker",
+            "url":"https://pano.yuntongvr.com/60580",
+            "tech":"Gulp + krpnao + vue"
+        },{
+            "title":"尚湖风景区",
+            "url":"http://flyingliu.github.io/shanghu/",
+            "tech":"baidu + avalon"
+        },{
+            "title":"一分钟叫你正确美白",
+            "url":"http://test.minuteschina.com/activity_whiteningQuiz.html",
+            "tech":"h5"
+        },{
+            "title":"奥黛莉赫本",
+            "url":"http://test.minuteschina.com/activity_lbd.html",
+            "tech":"h5 + avalon"
+        }
+        ,{
+            "title":"幸运大抽奖",
+            "url":"http://flyingliu.github.io/mydemo/jiang/www/",
+            "tech":"fis + H5"
+        }
+
+        ,{
+            "title":"宜春旅游资讯网",
+            "url":"http://flyingliu.github.io/mydemo/jiang/www/",
+            "tech":"baidu + xml"
+        }
+
+
+        ]
     },
     "tech": {
         "title": "工作技能",
