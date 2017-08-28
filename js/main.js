@@ -21,7 +21,7 @@ var loadCSS = function(config) {
 };
 
 require.config({
-    baseUrl: "/feilai/",
+    baseUrl: "/",
     paths: {
         "jquery": "https://cdn.bootcss.com/jquery/3.2.1/jquery.min",
         "vue": "https://cdn.bootcss.com/vue/2.4.2/vue.min",
